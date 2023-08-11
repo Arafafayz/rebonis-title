@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.produtc{
+    width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #eee;
+    text-align: center;
+}
+.produtc h2
+{
+    background-color: #009688;
+        width: calc(100% + 100px);
+        position: relative;
+        left: -50px;
+}
+.produtc h2::before{
+        content: "";
+            border: 15px solid;
+            border-color: #114640 #114640 transparent transparent;
+            position: absolute;
+            left: 0;
+            top: 34px;
+     
+}
+.produtc h2::after {
+    content: "";
+    border: 15px solid;
+    border-color: #114640 transparent transparent #114640;
+    position: absolute;
+    right: 0;
+    top: 34px;
+
+}
